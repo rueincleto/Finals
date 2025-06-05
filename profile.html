@@ -1,0 +1,323 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Personal profile</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="webdevTemplate/css/bootstrap.css">
+    <script src="webdevTemplate/js/popper.min.js"></script>
+	<script src="webdevTemplate/js/-3.4.min.js"></script>
+    <script src="webdevTemplate/js/popper.min.js"></script>	
+    <script src="webdevTemplate/js/bootstrap.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="mystyles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<style>
+  .carousel-control-prev, .carousel-control-next {
+            width: 20px;
+            height: 40px;
+            top: 35%;
+            background-color: #343a40;
+        }
+        body{
+          background-color: black;
+        }
+        .carousel {
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        .carousel-control-prev, .carousel-control-next {
+            width: 5%;
+        }
+</style>
+
+  </head>
+  <body>
+	<!-- navbar-->
+   <section id="home">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">My Personal Profile</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor01">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#home">Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../webdevTemplate/onhand.html">My Summer</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contacts</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+	<!-- container-->
+ <div class="jumbotron position-relative" 
+     style="background-image: url('https://i.pinimg.com/originals/fb/c6/f3/fbc6f31bd3b84159470b973aca7e0f97.gif');
+            background-position: center;
+            min-height: 500px;
+            margin-bottom: o;
+            overflow: hidden;">
+            
+
+   <div class="position-relative" style="z-index: 2;">
+    <div class="d-flex flex-column flex-md-row align-items-center justify-content-center text-center text-md-left">
+      <img class="rounded-circle img-fluid shadow-lg mb-4 mb-md-0 mr-md-4" 
+           src="jpg/russ.jpg" 
+           alt="Me Portrait"
+           style="width:150px; height: 150px; object-fit: cover; border: 2px solid white;">
+
+      <div style="color: 		white">
+        <h1 class="display-3 font-weight-bold" style="text-shadow:  2px 2px black;">
+          Russel I. Villanueva
+        </h1>
+        <p class="lead font-weight-bold" style="text-shadow:  0.5px  0.5px black;">
+          " Future UI/UX Designer & Front-End Developer | Student of University of Luzon"
+        </p>
+      </div>
+    </div>
+
+    <hr class="my-4" style="border-top: 2px solid rgba(255,255,255,0.5);">
+
+    <!--navbar-->
+    <ul class="nav nav-tabs" style="border-bottom-color: rgba(255,255,255,0.3);">
+      <li class="nav-item">
+        <a class="nav-link text-white font-weight-bold" 
+           data-toggle="tab" 
+           href="#profile"
+           style="text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">
+           Profile
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active text-white font-weight-bold" 
+           data-toggle="tab" 
+           href="#values"
+           style="background: rgba(255,255,255,0.15); text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">
+           Values
+        </a>
+      </li>
+    </ul>
+    
+    <div id="myTabContent" class="tab-content text-white mt-3 p-4 rounded-bottom" 
+         style="font-size: 1.15rem; 
+                background: rgba(0,0,0,0.4);
+                backdrop-filter: blur(5px);
+                line-height: 1.8;
+                border: 1px solid rgba(255,255,255,0.2);
+                border-top: none;">
+    <div class="tab-pane fade" id="profile">
+
+
+
+        <p class="mb-0" style="opacity: 0.95;">
+          "Hi, I'm Russel — a aspiring future-focused UI/UX Designer and Front-End Developer driven by creativity, curiosity, and code.
+           I specialize in transforming bold ideas into intuitive digital experiences that not only look beautiful but feel effortless to use. With a strong eye for design and a growing mastery of front-end technologies, I bridge the gap between user needs and technical innovation. Whether it’s crafting pixel-perfect interfaces or architecting seamless user journeys, I’m passionate about building products that make people’s lives easier, smarter, and more delightful. I'm not just learning the tools — I’m shaping the future of how people interact with the digital world."
+        </p>
+       </div>
+      <div class="tab-pane fade active show" id="values">
+        <p class="mb-0" style="opacity: 0.95;">
+          "I believe technology should empower everyone. I prioritize accessibility and inclusivity in every project I touch. Digital solutions should bridge gaps, not create them, and I'm committed to building interfaces that welcome all users."
+        </p>
+      </div>
+    </div>
+    </div>
+  </div>
+ </section>
+  <section id="about">
+    <div class="container">
+     <hr>
+    <h2 class="text-center mb-5" style="color: white;">About Me</h2>
+    <p style="text-align:center; color:white;">Hi! I’m Russel I. Villanueva— a aspiring and curious and creative Computer Science student blending logic with design to build user-first digital experiences. I'm passionate about making technology more human, accessible, and visually engaging. 
+    With a growing foundation in front-end development and a deep interest in user behavior, 
+    I’m working toward becoming a versatile UI/UX Designer and Front-End Developer. I am currently a student of the University of Luzon</p>
+
+    <h2 class="text-center mb-5" style="color: white; margin-top: 100px;">This is where I live</h2>
+    <div class="d-flex justify-content-center mb-5">
+  <div id="map" style="width: 80%; max-width: 800px; height: 400px; border-radius: 8px; border: 2px solid #fff;"></div>
+</div>
+
+<script>
+  $(document).ready(function () {
+    const dagupanCoords = [16.0431, 120.3331]; // Dagupan City coordinates
+    const map = L.map('map').setView(dagupanCoords, 14);
+
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+
+    L.marker(dagupanCoords)
+      .addTo(map)
+      .bindPopup("<b>Dagupan City</b><br>Pangasinan, Philippines")
+      .openPopup();
+  });
+</script>
+
+    
+   <div class="container">
+    <hr>
+            <h2 class="text-center mb-5" style="color: white;">What I do at School</h2>
+            <div class="row g-4">
+                <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-20 mt-4 mt-lg-0">
+                    <div id="imgCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#imgCarousel" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#imgCarousel" data-bs-slide-to="1"></button>
+                        </div>
+                        
+                        <div class="carousel-inner">
+                            <!-- Slide 1 -->
+                            <div class="carousel-item active">
+                                <div class="d-flex justify-content-center flex-wrap p-3">
+                                    <div class="text-center mx-2 mb-4" style="width: 250px; height: 300;">
+                                        <img src="jpg/draw.jpg" class="img-fluid rounded">
+                                    </div>
+                                    <div class="text-center mx-2 mb-4" style="width: 250px; height: 300;">
+                                        <img src="jpg/seminar.jpg" class="img-fluid rounded">
+                                    </div>
+                                    <div class="text-center mx-2 mb-4" style="width: 250px; height: 300;">
+                                        <img src="jpg/comp.jpg" class="img-fluid rounded">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Slide 2 -->
+                            <div class="carousel-item">
+                                <div class="d-flex justify-content-center flex-wrap p-3">
+                                    <div class="text-center mx-2 mb-4" style="width: 250px; height: 300;">
+                                        <img src="jpg/lappy.jpg" class="img-fluid rounded">
+                                    </div>
+                                    <div class="text-center mx-2 mb-4" style="width: 250px; height: 300;">
+                                        <img src="jpg/comp2.jpg" class="img-fluid rounded">
+                                    </div>
+                                    <div class="text-center mx-2 mb-4" style="width: 250px; height: 300;">
+                                        <img src="jpg/team.jpg" class="img-fluid rounded">
+                                    </div>
+                                </div>
+                            </div>
+
+                          
+                        
+                        <button class="carousel-control-prev" type="button" data-bs-target="#imgCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#imgCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    <!--cards-->
+    <div class="container">
+    <hr>
+            <h2 class="text-center mb-5" style="color: white;">What I do to improve myself</h2>
+            <div class="row g-4">
+                
+                <!-- Project 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="jpg/fundamentals.jpg" class="card-img-top" alt="Game Company Website Image" style="height: 232px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Master the Fundamentals of Design & Front-End Development</h5>
+                            <p class="card-text">Understanding design principles (like hierarchy, contrast, typography, and color theory) and front-end technologies (HTML, CSS, JavaScript) is the foundation of a successful UI/UX and dev career.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="jpg/portfloio.jpg" class="card-img-top" alt="Mini-Game App Image" style="height: 232px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Build a Portfolio with Real Projects</h5>
+                            <p class="card-text">Employers and clients want to see what you can do, not just what you know.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="jpg/curious.jpg" class="card-img-top" alt="Corn Website Iamge" style="height: 232px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Stay Curious & Connected</h5>
+                            <p class="card-text">The UI/UX and front-end space evolves quickly — staying current and connected gives you a competitive edge.</p><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</section>
+<section id="contact">
+   <!--Footer and contact-->
+        <hr>
+        <div class="container">
+            <h2 class="text-center mb-5" style="color: white; margin-top: 50px;">Get In Touch</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Subject">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-secondary">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-info">
+                        <h4 class="text-center" style="color: white">Contact Information</h4><br>
+                        <p style="color: white"><i class="fas fa-map-marker-alt me-2"></i> Address: Boar Knock, Mondstat Philippines</p>
+                        <p style="color: white"><i class="fas fa-phone me-2"></i>Contact No. (123) 456-7890</p>
+                        <p style="color: white"><i class="fas fa-envelope me-2"></i>Email Address: russ@website.com</p>
+                        <p style="color: white"><i class="fas fa-clock me-2"></i> Schedule: Monday - Friday: 1pm - 5pm </p><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+            </div>
+   </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 w-100">
+        <div class="container text-center">
+            <p>&copy; Russel. All Rights Reserved.</p>
+        </div>
+    </footer>
+</section>
+  </body>
+</html>
